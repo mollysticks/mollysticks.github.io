@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Molly Wright's Assignment Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="description" content="Assignment portal for Molly Wright in CIT 230: Web Frontend Development at Brigham Young University - Idaho"/>
+</head>
+<body onload="getYear()">
+    <header>
+        
+        <img src="me.jpg" alt="Molly's headshot" id="me">
+        <h1>Molly Wright</h1>
+    </header>
+
+    <p>
+        <h2>CIT 230: Assignment Portal</h2>
+        <hr>
+        <ul id="assignmentList">
+            <li><a href="assign02.html">Assignment 2</a></li>
+            <li><a href="assign03.html">Assignment 3</a></li>
+            <li><a href="assign04.html">Assignment 4</a></li>
+        </ul>
+    </p>
+    <footer>
+        <p>&#169 <span id="currentYear"></span> | Molly Wright | Texas | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
+    </footer>
+
+    <script language="javascript" type="text/javascript">
+        //getting current year
+        function getYear() {
+            //make new date object
+            var d = new Date();
+            //set the year from the date object to a new variable
+            var n = d.getFullYear();
+            //put the year right before the copyright symbol
+            document.getElementById("currentYear").innerHTML = n;
+        }
+    </script>
+</body>
+
+</html>
