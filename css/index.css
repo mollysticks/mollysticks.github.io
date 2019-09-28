@@ -22,6 +22,10 @@ header, footer {
     box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.75);
 }
 
+h1, h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
 h2 {
     padding: 0px 15px;
 }

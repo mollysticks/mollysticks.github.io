@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>Molly Wright's Assignment Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/date.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <meta name="description" content="Assignment portal for Molly Wright in CIT 230: Web Frontend Development at Brigham Young University - Idaho"/>
-</head>
+</head> 
 <body>
     <header>
         
@@ -29,28 +33,6 @@
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 
-    <script language="javascript" type="text/javascript">
-        //getting current year
-        function getYear() {
-            //make new date object
-            var d = new Date();
-            //set the year from the date object to a new variable
-            var n = d.getFullYear();
-            //put the year right before the copyright symbol
-            document.getElementById("currentYear").innerHTML = n;
-        }
-
-        function lastModified() {
-            //get the string for last modified
-            var lastModifiedString = document.lastModified;
-            //make a new date object with the last modified information
-            var d = new Date(lastModifiedString);
-            document.getElementById("lastModified").innerHTML = d.toLocaleDateString('en-US') + " " + d.toLocaleTimeString('en-US');
-        }
-        //run the functions
-        getYear();
-        lastModified();
-    </script>
 </body>
 
 </html>
