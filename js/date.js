@@ -17,5 +17,9 @@ function lastModified() {
     document.getElementById("lastModified").innerHTML = d.toLocaleDateString('en-US') + " " + d.toLocaleTimeString('en-US');
 }
 //run the functions
-getYear();
-lastModified();
+function getDates() {
+    getYear();
+    lastModified();
+}
+
+
