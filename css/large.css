@@ -1,0 +1,10 @@
+@media (min-width: 1100px) 
+{
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+#kohlsPic {
+    max-width: 193px;
+}

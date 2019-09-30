@@ -8,11 +8,54 @@
     <script src="js/date.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/designPrinciples.css">
+    <link rel="stylesheet" type="text/css" href="../css/middle.css">
+    <link rel="stylesheet" type="text/css" href="../css/large.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <meta name="description" content="Assignment portal for Molly Wright in CIT 230: Web Frontend Development at Brigham Young University - Idaho"/>
 </head> 
-<body class =>
+<body onload="getDates()">
+    <header>
+        <h1>Design Principles</h1>
+        <h2>CIT 230 | Molly Wright</h2>
+        <p id="homeButton"><a href="../index.html">Home</a></p>
+    </header>
+    <main>  
+        <section>
+            <h3>Hick's Law</h3>
+            <p>Kohl's <br> <a href="https://www.kohls.com/catalog/kids-clothing.jsp?CN=AgeAppropriate:Baby+AgeAppropriate:Kids+Department:Clothing+Assortment:9.25%20Lowest%20Prices%20of%20the%20Season&BL=y&icid=hpmf-lpskids&kls_sbp=75015369774796475874353315235288452564">Kohl's Website</a></p>
+            <img src="kohls.jpg" alt="kids subpage from kohls website" id="kohlsPic" class="websitesPic">
+            <p>Kohl's kids clothing subpage gives plenty of filters so the choices can be narrowed down.
+                Kohl's does sell a huge number of products, therefore it is necessary to narrow down the 
+                options. They have filters for type of clothes, color of clothes, and on and on. This 
+                allows the shopper to actually make choices.
+            </p>
+        </section>
 
+        <section>
+            <h3>Rule of Thirds</h3>
+            <p>NPR <br> <a href="https://www.npr.org/">NPR Homepage</a></p>
+            <img src="npr.jpg" alt="NPR's homepage" id="nprPic" class="websitesPic">
+            <p>NPR is a news source that using the Rule of Thirds to 
+                catch the readers eye. It puts things on the popular
+                intersection of lines so what they want the reader to 
+                focus on is in the best spot. Their headline first and 
+                then the picture.
+            </p>
+        </section>
+
+        <section>
+            <h3>PARC: Proximity</h3>
+            <p>BBC <br> <a href="https://www.bbc.com/">BBC homepage</a></p>
+            <img src="bbc.jpg" alt="BBC's homepage" id="bbcPic" class="websitesPic">
+            <p>BBC reports on all the news and happenings around the 
+                world. It does a good job of grouping things together
+                that belong togegther. The news section, sports section, 
+                weather section, and so on. 
+            </p>
+        </section>
+
+
+    </main>
 </body>
 </html>
