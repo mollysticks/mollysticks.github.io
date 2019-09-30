@@ -42,12 +42,11 @@ main {
 section {
     margin: 10px;
     padding: 5px;
-    border: 1px #000000
-};
-
-h3 {
+    border: 1px #000000;
     background-color: #dda0dd;
     padding: 15px;
     margin-bottom: 50px;
     border-radius: 25px;
-}
+    text-align: center;
+};
+
