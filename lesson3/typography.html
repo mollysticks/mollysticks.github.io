@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>CIT 230 | Molly Wright's Weather Site Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../js/date.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">   
+    <link rel="stylesheet" type="text/css" href="../css/weather-site.css">    
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="description" content="Weather site for Molly Wright, CIT 230 term project"/>
+</head> 
+<body onload="getDates()">
+    <header>
+        <h1>Storm's Comin' Weather</h1>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">About</a></li>
+                <li><a href="target-audience.html">Audience</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Fonts used:</h2>
+        <ul>
+            <li id="headingFont">Oxygen is used in the header and footer text</li>
+            <li>Helvetica is used for the body text</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentYear"></span> | Molly Wright | Texas | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
