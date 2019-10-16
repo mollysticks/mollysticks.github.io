@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1000px) {
+
+#logo, h1{
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+}
+
+main { 
+    max-width: 1200px;
+}
+nav {
+    background-color: #041b2a;
+}
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+li:hover {
+    background-color: #252525;
+}
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+}
+
