@@ -8,14 +8,11 @@ h1 {
     text-align: center;
 }
 
-main { 
-    max-width: 1200px;
-}
 nav {
     background-color: #041b2a;
 }
+
 nav ul {
-    max-width: 1200px;
     margin: 0 auto;
 }
 

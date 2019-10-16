@@ -2,9 +2,8 @@
 
 body {
     font-family: Helvetica;
-    padding: 0px 50px;
     margin: auto;
-    width: 70%;
+    width: 100%;
     color: #041b2a;
     background-color: #ACAEB1;
     justify-self: center;
@@ -41,6 +40,10 @@ a:visited {
 
 main {
     text-align: center;
+}
+
+nav ul {
+    max-width: 100%;
 }
 
 .navigation a {
@@ -80,8 +83,6 @@ nav {
 .navigation li {
     display: none;
 }
-
-
 
 .responsive li {
     display: block;
