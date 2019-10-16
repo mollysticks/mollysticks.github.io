@@ -11,4 +11,7 @@
         display: block;
         flex: 1 1 100%;
     }
+    nav {
+        background-color: #041b2a;
+    }
 }
