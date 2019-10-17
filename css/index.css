@@ -3,23 +3,28 @@ body {
     padding: 0px 50px;
     margin: auto;
     width: 75%;
-    background-color: #cccccc;
-    color: #0f292f;
+    background-color: #ffffff;
+    color: #B62E56;
 }
 
 header, footer {
-    background-color: #dda0dd;
+    background-color: #320a28;
     text-align: center;
     clear: left;
     padding: 15px;
     margin-bottom: 50px;
     border-radius: 25px;
+    color: #CB9173;
 }
 
 #me {
     float: right;
     height: auto;
     box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.75);
+}
+
+li:hover {
+    color: cb9173;
 }
 
 h1, h2 {
