@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <title>CIT 230 | Molly Wright's Weather Site Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
     <script src="js/weather.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-   
-    
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
     <link rel="stylesheet" type="text/css" href="css/preston.css"> 
     <link rel="stylesheet" type="text/css" href="css/preston-medium.css">
     <link rel="stylesheet" type="text/css" href="css/preston-large.css">
@@ -18,15 +16,20 @@
 </head> 
 <body onload="displayDates()">
     <header>
+        <p id="sat-banner">Saturday = Preston Pancakes in the Park!
+            <br>
+            9:00 a.m. Saturday at the city park pavilion.
+        </p>
         <img src="images/lightning-logo.jpg" alt="Storm's Comin' logo" id="logo">
-        <h1>Storm's Comin' Weather</h1>
+        <h1>Storm's Comin' Weather</h1> <br>
+        <h2>Everyone needs to know when to get out of the storm!</h2>
         <p id="home-assignments"><a href="../index.html">Molly Wright's Assignments</a></p>
     </header>
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="preston-5.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -36,11 +39,80 @@
     <main>
         <section>
             <h2>Preston Idaho</h2>
-            <div class="containers">
-            <div class="contentbox">Hero w/ weather summary</div>
-            <div class="contentbox forecast">5 Day Forecast</div>
-            <div class="contentbox">Article</div>
-            <div class="contentbox">Contact Information</div>
+            <div class="herodiv"> 
+                <img src="images/town-storm.jpeg" alt="lightning storm over town" id="town-storm">
+                <section class="stats">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <p>
+                        Currently: Cloudy
+                        <br>
+                        High: 75&#8457
+                        <br>
+                        Wind Chill: 3&#8457
+                        <br>
+                        Humidity: 36%
+                        <br>
+                        Wind Speed: 8 mph
+                    </p>
+                </div></section>
+                <div class="forecast">
+                    <h3>5 Day Forecast</h3>
+                    <table id="5-day-forecast">
+                        <tr>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr id="images">
+                            <td><img src="images/cloud.jpg" alt="cloud"></td>
+                            <td><img src="images/sun.jpg" alt="sun"></td>
+                            <td><img src="images/cloud.jpg" alt="cloud"></td>
+                            <td><img src="images/rain.jpg" alt="rain"></td>
+                            <td><img src="images/thunder.jpg" alt="storm cloud"></td>
+                        </tr>
+                        <tr>
+                            <td>75&#8457</td>
+                            <td>78&#8457</td>
+                            <td>76&#8457</td>
+                            <td>69&#8457</td>
+                            <td>65&#8457</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="article">
+                    <img src="images/Women-storm.jpg" alt="2 women on car watching storm" id="article-image">
+                    <h3>Fall means storms!</h3>
+                    <h4>By Molly Wright</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum quibusdam fuga sunt nesciunt maxime, et iste consectetur facilis temporibus quam rem dolorum saepe ut commodi fugit, magni asperiores animi? <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta fugit quibusdam aliquid, porro, doloremque velit ab labore vero eos voluptatem qui deserunt fugiat aliquam iste explicabo eveniet sapiente. Obcaecati.<br><br>
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut enim in laudantium illum, est id repudiandae. Quasi quo minus aperiam dolorum optio ad ab sed nam suscipit sit! Consequuntur, tempore!<br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur natus unde numquam inventore accusamus odit ipsum qui nemo officiis exercitationem itaque, cumque beatae nesciunt id eos quos saepe fugiat.<br><br>
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sapiente suscipit sequi eius, voluptatem cupiditate consequuntur est neque ipsam assumenda odio ipsum enim itaque accusamus non fugit adipisci, a veniam?<br>
+                    </p>
+                </div>
+                <div class="contact">
+                    <img src="images/preston-map.jpg" alt="image of map of preston idaho" id="map">
+
+                    <p id="contact-text">
+                        <h3>Storm's Comin' Weather!</h3>
+                        <p> <img src="images/map-location.jpg" alt="google map location symbol" id="google"> 
+                            E 4th N <br>
+                            Preston, ID 83263
+                        </p>
+                        <br>
+                        <p> &#9742 555-555-5555
+                            <div id="email">&#9993 info@stormscomin.com</div>
+                        </p>
+                    </p>
+                </div>
             </div>
         </section>
         
@@ -49,7 +121,5 @@
         <p>&#169; <span id="currentYear"></span> |Storm's Comin' Weather | Molly Wright | Texas | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
         <span id="currentDate"></span>
         
-        <!-- The information to credit my logo's image -->
-        <p style="font-size: 0.9rem; font-style: italic;"><a href="https://www.flickr.com/photos/7440391@N06/40989286024">"Lightning Logo-750_7481a"</a><span> by <a href="https://www.flickr.com/photos/7440391@N06">DavidInSATX</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p>
     </footer>
 </body>

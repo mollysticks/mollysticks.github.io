@@ -23,10 +23,6 @@ header, footer {
     box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.75);
 }
 
-li:hover {
-    color: cb9173;
-}
-
 h1, h2 {
     font-family: 'Cabin', sans-serif;
 }
@@ -37,5 +33,13 @@ h2 {
 
 #assignmentList {
     list-style-position: inside;
+}
+
+a:link {
+    color: #B62E56;
+}
+
+footer a:visited {
+    color: #E0D68A;
 }
 

@@ -14,4 +14,12 @@
     nav {
         background-color: #041b2a;
     }
+
+    .stats {
+        left: 150px;
+    }
+
+    #town-storm {
+        width: 80%;
+    }
 }

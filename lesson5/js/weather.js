@@ -23,8 +23,26 @@ function displayDates() {
     let date = new Date;
     displayYear(date);
     displayCurrentDate(date);
+    toggleFriday(date);
+}
+
+function toggleFriday(date) {
+    let day = date.getDay();
+    console.log(day);
+    if (day == 5) {
+        document.getElementById("sat-banner").style.display = "block";
+    }
 }
 
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
+$(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+

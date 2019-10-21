@@ -4,7 +4,7 @@ footer, main {
     max-width: 1100px;
     margin: auto;
 }
-#logo, h1{
+#logo, h1, h2 {
     display: inline;
 }
 
@@ -31,9 +31,24 @@ nav ul {
 li:hover {
     background-color: #252525;
 }
+
+li a:active {
+    background-color: #320a28;
+}
 .navigation li {
     display: block;
     flex: 1 1 100%;
 }
+
+.stats {
+    left: 250px;
+}
+
+.forecast h3 {
+    font-size: 1.5em;
+    padding: 5px 0px 2px 0px;
+    margin: 0px;
+}
+
 }
 
