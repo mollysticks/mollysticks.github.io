@@ -1,0 +1,25 @@
+@media only screen and (min-width: 769px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    nav {
+        background-color: #041b2a;
+    }
+
+    .stats {
+        left: 150px;
+    }
+
+    #town-storm {
+        width: 80%;
+    }
+}
