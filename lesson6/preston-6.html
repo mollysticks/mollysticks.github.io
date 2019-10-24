@@ -46,7 +46,14 @@
         <section>
             <h2>Preston Idaho</h2>
             <div class="herodiv"> 
-                <img src="images/town-storm.jpeg" alt="lightning storm over town" id="town-storm">
+                <picture>
+                    <source srcset="images/hero-image400.jpg" media="(mid-width: 400px) and (max-width: 599px)">
+                    <source srcset="images/hero-image600.jpg" media="(min-width: 600px) and (max-width:899px)">
+                    <source srcset="images/hero-image900.jpg" media="(min-width: 900px)">
+                    <img src="images/hero-image300.jpg" alt="cloudy landscape scene">
+
+                </picture>
+                <!-- <img src="images/town-storm.jpeg" alt="lightning storm over town" id="town-storm"> -->
                 <section class="stats">
                     <h3>Weather Summary</h3>
                     <hr>
@@ -114,9 +121,9 @@
                         <p> <img src="images/map-location.jpg" alt="google map location symbol" id="google"> 
                             E 4th N <br>
                             Preston, ID 83263
-                        </p>
                         <br>
-                        <p> &#9742; 555-555-5555
+                        <br>
+                        &#9742; 555-555-5555
                             <div id="email">&#9993; info@stormscomin.com</div>
                         </p>
                     </div>
