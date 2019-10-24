@@ -28,7 +28,6 @@ function displayDates() {
 
 function toggleFriday(date) {
     let day = date.getDay();
-    console.log(day);
     if (day == 5) {
         document.getElementById("sat-banner").style.display = "block";
     }
