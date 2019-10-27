@@ -193,5 +193,14 @@ nav {
     display: none;
 }
 
+footer {
+    width: 100%;
+}
+
+#article-image {
+    display: block;
+    float: none;
+}
+
 
 }
