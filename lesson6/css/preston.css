@@ -201,6 +201,10 @@ footer {
     width: 100%;
 }
 
+.header-flex {
+    display: block;
+}
+
 #article-image {
     display: block;
     float: none;

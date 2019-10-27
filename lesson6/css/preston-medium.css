@@ -23,6 +23,10 @@
         width: 80%;
     }
 
+    .header-flex {
+        display: block;
+    }
+
     footer {
         width: 100%;
     }
