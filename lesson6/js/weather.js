@@ -37,11 +37,5 @@ function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-$(function(){
-    $('a').each(function() {
-      if ($(this).prop('href') == window.location.href) {
-        $(this).addClass('current');
-      }
-    });
-  });
+
 
