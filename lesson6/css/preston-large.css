@@ -8,6 +8,15 @@ footer, main {
     display: inline;
 }
 
+.header-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#heading-flex {
+    padding-left: 30px;
+}
+
 h1 {
     text-align: center;
 }

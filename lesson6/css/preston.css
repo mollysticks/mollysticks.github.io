@@ -30,14 +30,7 @@ header, footer {
     font-family: 'Oswald', sans-serif;    
 }
 
-.header-flex {
-    display: flex;
-    justify-content: center;
-}
 
-#heading-flex {
-    padding-left: 30px;
-}
 
 #logo {
     border-radius: 20px;
