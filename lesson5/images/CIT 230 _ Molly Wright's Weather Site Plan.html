@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CIT 230 | Molly Wright's Weather Site Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/weather.js.download"></script>
+    <script src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/windchill.js.download" defer=""></script>
+
+    <link rel="stylesheet" type="text/css" href="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/preston.css"> 
+    <link rel="stylesheet" type="text/css" href="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/preston-medium.css">
+    <link rel="stylesheet" type="text/css" href="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/preston-large.css">
+    <link href="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/css" rel="stylesheet">
+    <meta name="description" content="Weather site for Molly Wright, CIT 230 term project">
+</head> 
+<body onload="displayDates()">
+    <header>
+        <p id="sat-banner">Saturday = Preston Pancakes in the Park!
+            <br>
+            9:00 a.m. Saturday at the city park pavilion.
+        </p>
+        <div class="header-flex">
+            <div id="image-flex">
+                <img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/lightning-logo.jpg" alt="Storm&#39;s Comin&#39; logo" id="logo">
+            </div>
+            <div id="heading-flex">
+                <h1>Storm's Comin' Weather</h1> <br>
+                <h2>Everyone needs to know when to get out of the storm!</h2>
+            </div>
+        </div>
+        <p id="home-assignments"><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/index.html">Molly Wright's Assignments</a></p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html#" onclick="toggleMenu()">☰ Menu</a></li>
+            <li><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html#">Home</a></li>
+            <li><a class="current" href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html#">Soda Springs</a></li>
+            <li><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html#">Fish Haven</a></li>
+            <li><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html#">Storm Center</a></li>
+            <li><a href="file:///C:/CompSciStuff/CIT%20230/mollysticks.github.io/lesson6/preston-6.html#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Preston Idaho</h2>
+            <div class="herodiv"> 
+                <picture>
+                    <!-- <source srcset="images/hero-image400.jpg" media="(mid-width: 400px) and (max-width: 599px)"> -->
+                    <source srcset="images/hero-image600.jpg" media="(min-width: 600px) and (max-width:899px)">
+                    <source srcset="images/hero-image900.jpg" media="(min-width: 900px)">
+                    <img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/hero-image300.jpg" alt="cloudy landscape scene">
+
+                </picture>
+                <!-- <img src="images/town-storm.jpeg" alt="lightning storm over town" id="town-storm"> -->
+                <section class="stats">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <p>
+                        Currently: Cloudy
+                        <br>
+                        High: <span id="high-temp">49</span>℉
+                        <br>
+                        Wind Chill: <span id="chill">48℉</span>
+                        <br>
+                        Humidity: 36%
+                        <br>
+                        Wind Speed: <span id="wind-speed">4</span> mph
+                    </p>
+                </section>
+            </div>
+            <div class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table id="5-day-forecast">
+                    <tbody><tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr id="images">
+                        <td><img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/cloud.jpg" alt="cloud"></td>
+                        <td><img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/sun.jpg" alt="sun"></td>
+                        <td><img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/cloud.jpg" alt="cloud"></td>
+                        <td><img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/rain.jpg" alt="rain"></td>
+                        <td><img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/thunder.jpg" alt="storm cloud"></td>
+                    </tr>
+                    <tr>
+                        <td>75℉</td>
+                        <td>78℉</td>
+                        <td>76℉</td>
+                        <td>69℉</td>
+                        <td>65℉</td>
+                    </tr>
+                </tbody></table>                    
+            </div>
+            <div class="article">
+                <img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/Women-storm.jpg" alt="2 women on car watching storm" id="article-image">
+                <h3>Fall means storms!</h3>
+                <h4>By Molly Wright</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum quibusdam fuga sunt nesciunt maxime, et iste consectetur facilis temporibus quam rem dolorum saepe ut commodi fugit, magni asperiores animi? <br><br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta fugit quibusdam aliquid, porro, doloremque velit ab labore vero eos voluptatem qui deserunt fugiat aliquam iste explicabo eveniet sapiente. Obcaecati.<br><br>
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut enim in laudantium illum, est id repudiandae. Quasi quo minus aperiam dolorum optio ad ab sed nam suscipit sit! Consequuntur, tempore!<br><br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur natus unde numquam inventore accusamus odit ipsum qui nemo officiis exercitationem itaque, cumque beatae nesciunt id eos quos saepe fugiat.<br><br>
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sapiente suscipit sequi eius, voluptatem cupiditate consequuntur est neque ipsam assumenda odio ipsum enim itaque accusamus non fugit adipisci, a veniam?<br>
+                </p>
+            </div>
+            <div class="contact">
+                <div id="contact-image">
+                    <img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/preston-map.jpg" alt="image of map of preston idaho" id="map">
+                </div>
+                <div id="contact-text-flex">
+                    <div id="contact-text">
+                        <h3>Storm's Comin' Weather!</h3>
+                        <p> <img src="./CIT 230 _ Molly Wright&#39;s Weather Site Plan_files/map-location.jpg" alt="google map location symbol" id="google"> 
+                            E 4th N <br>
+                            Preston, ID 83263
+                            <br>
+                            <br>
+                            ☎ 555-555-5555
+                        </p>
+                        <div id="email">✉ info@stormscomin.com</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© <span id="currentYear">2019</span> |Storm's Comin' Weather | Molly Wright | Texas | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
+        <span id="currentDate">Saturday, 26 October 2019</span>
+        
+    </footer>
+
+</body></html>
