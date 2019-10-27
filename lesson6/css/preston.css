@@ -96,6 +96,10 @@ h1, h2, p {margin: 0;}
     color: #ffffff;
 }
 
+.stats h3 {
+    padding-bottom: 0px;
+}
+
 .forecast table {
     background-color: #0c4261;
     color: #ffffff;

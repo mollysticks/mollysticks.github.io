@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
     <script src="js/weather.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/windchill.js" defer></script>
 
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
     <link rel="stylesheet" type="text/css" href="css/preston.css"> 
@@ -61,13 +61,13 @@
                     <p>
                         Currently: Cloudy
                         <br>
-                        High: <div id="high-temp">49</div>&#8457;
+                        High: <span id="high-temp">49</span>&#8457;
                         <br>
-                        Wind Chill: <span id="chill"></span>&#8457;
+                        Wind Chill: <span id="chill"></span>
                         <br>
                         Humidity: 36%
                         <br>
-                        Wind Speed: <div id="wind-speed">2</div> mph
+                        Wind Speed: <span id="wind-speed">4</span> mph
                     </p>
                 </section>
             </div>
