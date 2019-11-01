@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    background-color: #dbeaeb;
+}
+
+img {
+    padding: 20px 0px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    display: block;
+}
