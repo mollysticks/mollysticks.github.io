@@ -53,7 +53,7 @@ li a:active {
     width: 100%;    
 }
 
-picture:hover {
+figure:hover {
     box-shadow: 0 0 50px #333;
 }
 
