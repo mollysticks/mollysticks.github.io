@@ -1,7 +1,3 @@
-function check () {
-    console.log("is this js loading?")
-}
-
 function preloadImage(img) {
     const src = img.getAttribute("data-src");
     if(!src) {

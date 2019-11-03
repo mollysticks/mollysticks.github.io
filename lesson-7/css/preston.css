@@ -1,0 +1,134 @@
+body {
+    font-family: Helvetica;
+    margin: auto;
+    width: 100%;
+    color: #041b2a;
+    background-color: #ACAEB1;
+    justify-self: center;
+}
+
+picture {
+    width: 90%;
+    height: auto;
+}
+
+header, footer {
+    background-color: #0c4261;
+    text-align: center;
+    color: #ACAEB1;
+    clear: left;
+    padding: 15px;  
+    font-family: 'Oswald', sans-serif;    
+}
+
+#logo {
+    border-radius: 20px;
+}
+
+#headingFont {
+    font-family: 'Oswald', sans-serif;
+}
+
+footer {
+    width:80%;
+}
+
+main {
+    text-align: center;
+}
+
+nav ul {
+    max-width: 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:link {
+    color: #ACAEB1;
+}
+
+a:visited {
+    color: #fdfcfc;
+}
+
+nav .current {
+    background-color: #ACAEB1;
+    color: #041b2a;
+}
+
+li:hover {
+    background-color: #252525;
+}
+
+main h2 {
+    padding: 30px 0px 10px 0px;
+}
+
+.image-box {
+    margin: 30px auto;
+    padding: 0px
+}
+
+figcaption {
+    background-color: #041b2a;
+    color: #ACAEB1;
+    padding: 5px 0px;
+    margin: 0px auto;
+}
+
+.gallery-photos {
+    justify-items: center;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+nav {
+    margin: 0px auto;
+    max-width: 760px;
+    background-color: #041b2a;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+#town-storm {
+    width: 80%;
+}
+
+footer {
+    width: 100%;
+}
+
+.header-flex {
+    display: block;
+}
+
+.gallery-photos {
+    display: block;
+}
+
+.image-box, figcaption {
+    width: 90%;
+}
+
+}
