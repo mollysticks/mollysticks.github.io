@@ -2,6 +2,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+h1, h2 {
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
 table {
     margin: 75px auto;
     box-shadow: 5px 10px 8px #6599B0;
