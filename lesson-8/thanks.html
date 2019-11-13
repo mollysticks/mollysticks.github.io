@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>CIT 230 | Molly Wright's Weather Site Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/weather.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="../preston-page/css/preston.css"> 
+    <link rel="stylesheet" type="text/css" href="../preston-page/css/preston-medium.css">
+    <link rel="stylesheet" type="text/css" href="../preston-page/css/preston-large.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="description" content="Storm Center site for Molly Wright, CIT 230 term project"/>
+</head> 
+<body onload="displayDates()">
+    <header>
+        <p id="sat-banner">Saturday = Preston Pancakes in the Park!
+            <br>
+            9:00 a.m. Saturday at the city park pavilion.
+        </p>
+        <div class="header-flex">
+            <div id="image-flex">
+                <img src="../preston-page/images/lightning-logo.jpg" alt="Storm's Comin' logo" id="logo">
+            </div>
+            <div id="heading-flex">
+                <h1>Storm's Comin' Weather</h1> <br>
+                <h2>Everyone needs to know when to get out of the storm!</h2>
+            </div>
+        </div>
+        <p id="home-assignments"><a href="../index.html">Molly Wright's Assignments</a></p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../preston-page/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="current">Storm Center</a></li>
+            <li><a href="../preston-page/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Thanks for filling out the form.</h3>
+    </main>
+    <footer>
+            <p>&#169; <span id="currentYear"></span> |Storm's Comin' Weather | Molly Wright | Texas | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
+            <span id="currentDate"></span>
+            
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: [
+                        'Oswald'
+                    ]
+                }
+            });
+        </script>
+</body>

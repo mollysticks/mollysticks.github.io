@@ -1,0 +1,48 @@
+@media only screen and (min-width: 769px) {
+    /* navigation css medium */
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    nav {
+        background-color: #041b2a;
+    }
+
+    /* header footer css medium */
+    .header-flex {
+        display: block;
+    }
+
+    footer {
+        width: 100%;
+    }
+    
+    /* preston town css medium */
+    .stats {
+        left: 150px;
+    }
+
+    #town-storm {
+        width: 80%;
+    }
+
+    /* gallery page css medium */
+    .gallery-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image-box, figcaption {
+        width: 100%;
+        margin: auto;        
+    }
+    
+}
