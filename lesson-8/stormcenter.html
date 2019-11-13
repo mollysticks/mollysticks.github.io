@@ -52,8 +52,8 @@
                     <label for="name">Full Name*</label>
                     <input id ="name" type="text" name="name" placeholder="" pattern="[A-z\s]{5,}" required autocomplete="off">
 
-                    <label for="email">Email Address <em>(name@domain.com)</em></label>
-                    <input id="email" type="email" name="email" placeholder="name@domain.com"  autocomplete="off">
+                    <label for="user-email">Email Address <em>(name@domain.com)</em></label>
+                    <input id="user-email" type="email" name="email" placeholder="name@domain.com"  autocomplete="off">
 
                     <label for="phone">Phone Number* <em>(5555555555)</em></label>
                     <input id="phone" type="tel" name="phone" pattern="[0-9]+" placeholder="5555555555" required autocomplete="off">
@@ -76,8 +76,8 @@
                         <option value="Tornado"></option>
                     </datalist>
 
-                    <label for="severity">Storm Severity: (1-10) > <span id="severity">5</span></label> <br>
-                    1 <input type="range" id="severity" value="5" min="1" max="10" step="1" list="severity-numbers" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
+                    <label for="storm-severity">Storm Severity: (1-10) > <span id="severity">5</span></label> <br>
+                    1 <input type="range" id="storm-severity" value="5" min="1" max="10" step="1" list="severity-numbers" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
                     <datalist id="severity-numbers">
                         <option>1</option>   
                         <option>2</option>
