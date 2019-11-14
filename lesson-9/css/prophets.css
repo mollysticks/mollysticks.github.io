@@ -13,7 +13,6 @@ h1, footer {
 img {
     height: 400px;
     width: 300px;
-
 }
 
 h2, h3, h4 {
@@ -35,8 +34,10 @@ section {
 
 @media only screen and (min-width: 32.5em) {
     .cards {
+        display: grid;
         grid-template-columns:1fr 1fr;  
     }
+}
 
 @media only screen and (min-width: 60em) {
     .cards {
