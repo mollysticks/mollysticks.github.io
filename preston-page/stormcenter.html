@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>CIT 230 | Molly Wright's Weather Site Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/weather.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="css/preston.css"> 
+    <link rel="stylesheet" type="text/css" href="css/preston-medium.css">
+    <link rel="stylesheet" type="text/css" href="css/preston-large.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="description" content="Storm Center site for Molly Wright, CIT 230 term project"/>
+</head> 
+<body onload="displayDates()">
+    <header>
+        <p id="sat-banner">Saturday = Preston Pancakes in the Park!
+            <br>
+            9:00 a.m. Saturday at the city park pavilion.
+        </p>
+        <div class="header-flex">
+            <div id="image-flex">
+                <img src="images/lightning-logo.jpg" alt="Storm's Comin' logo" id="logo">
+            </div>
+            <div id="heading-flex">
+                <h1>Storm's Comin' Weather</h1> <br>
+                <h2>Everyone needs to know when to get out of the storm!</h2>
+            </div>
+        </div>
+        <p id="home-assignments"><a href="../index.html">Molly Wright's Assignments</a></p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="current">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Storm Center Form</h3>
+        <h4>Fields marked with * are required</h4>
+        <section class="storm-center-form">
+            <form method="get" action="thanks.html">
+
+                <fieldset class="contact-info">
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name*</label>
+                    <input id ="name" type="text" name="name" placeholder="" pattern="[A-z\s]{5,}" required autocomplete="off">
+
+                    <label for="user-email">Email Address <em>(name@domain.com)</em></label>
+                    <input id="user-email" type="email" name="email" placeholder="name@domain.com"  autocomplete="off">
+
+                    <label for="phone">Phone Number* <em>(5555555555)</em></label>
+                    <input id="phone" type="tel" name="phone" pattern="[0-9]+" placeholder="5555555555" required autocomplete="off">
+
+                    <label for="zipcode">Zip Code*</label>
+                    <input id="zipcode" type="text" name="zipcode" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required autocomplete="off">
+                </fieldset>
+                <fieldset class="storm-report">
+                    <legend>Storm Report</legend>
+                    <label for="date">Storm Date <em>(mm/dd/yyyy)</em></label>
+                    <input id="date" type="date" name="date">
+
+                    <label for="storm">Storm Type</label>
+                    <input id="storm" type="text" name="stormtype" list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>"
+                        <option value="Hail"></option>
+                        <option value="Hurrcane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+
+                    <label for="storm-severity">Storm Severity: (1-10) > <span id="severity">5</span></label> <br>
+                    1 <input type="range" id="storm-severity" value="5" min="1" max="10" step="1" list="severity-numbers" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
+                    <datalist id="severity-numbers">
+                        <option>1</option>   
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </datalist> 
+                    
+                    <label for="region">Storm Region</label>
+                    <select id="region" name="region">
+                        <option value="select" disabled selected>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugar city">Sugar City</option>
+                        <option value="fish haven">Fish Haven</option>
+                    </select>
+                </fieldset>
+                <fieldset class="in-danger-question">
+                    <legend>Are you in Danger? <em>(Choose one)</em></legend>
+                
+                    <input id="yes" type="radio" name="danger" value="yes">
+                    <label for="yes">Yes</label>
+
+                    <input id="maybe" type="radio" name="danger" value="maybe">
+                    <label for="maybe">Maybe</label>
+
+                    <input id="no" type="radio" name="danger" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <div class="more-information">
+                    <label for="information">Additional Information:</label>
+                    <textarea id="information" name="informationtext"></textarea>
+                </div>
+                
+                <input type="submit" value="Send" class="submitButton">
+
+            </form>
+            
+        </section>
+            
+            <div class="contact">
+                <div id="contact-image">
+                    <img src="../preston-page/images/preston-map.jpg" alt="image of map of preston idaho" id="map">
+                </div>
+                <div id="contact-text-flex">
+                    <div id="contact-text">
+                        <h3>Storm's Comin' Weather!</h3>
+                        <p> <img src="../preston-page/images/map-location.jpg" alt="google map location symbol" id="google"> 
+                            E 4th N <br>
+                            Preston, ID 83263
+                            <br>
+                            <br>
+                            &#9742; 555-555-5555
+                        </p>
+                        <div id="email">&#9993; info@stormscomin.com</div>
+                    </div>
+                </div>
+            </div>
+       
+        
+    </main>
+    <footer>
+        <p>&#169; <span id="currentYear"></span> |Storm's Comin' Weather | Molly Wright | Texas | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
+        <span id="currentDate"></span>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Oswald'
+                ]
+            }
+        });
+    </script>
+</body>

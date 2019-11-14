@@ -26,6 +26,7 @@ function displayDates() {
     toggleFriday(date);
 }
 
+//show pancake announcement on Fridays
 function toggleFriday(date) {
     let day = date.getDay();
     if (day == 5) {
@@ -33,9 +34,13 @@ function toggleFriday(date) {
     }
 }
 
+//toggle the menu to be seen or not, depending on the size screen
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-
+//adjust rating function for storm center form page
+function adjustRating(rating) {
+    document.getElementById("severity").innerHTML = rating;
+}
 
