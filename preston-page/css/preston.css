@@ -219,7 +219,23 @@ legend {
 }
 
 /*Home page css*/
+.sodasprings {
+    order: 2;
+}
 
+.preston {
+    order: 1;
+}
+
+.fishhaven {
+    order: 3;
+}
+
+.town-info {
+    border: 1px solid #041b2a;
+    background-color: #ffffff;
+    color: #041b2a;
+}
 
 
 @media only screen and (max-width: 768px) {

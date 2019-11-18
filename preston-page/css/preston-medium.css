@@ -46,23 +46,29 @@
     }
 
 /*Homepage css*/
-div.cards {
+.cards {
     grid-template-rows: 1fr 1fr 1fr;
     display: grid;
 }
 
+.preston {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "info-only image";
+}
+/* 
 .cards section {
     display: grid;
     grid-template-columns: 2fr 2fr;
     align-items: center;
-    grid-template-areas: "info image";
+    grid-template-areas: "info-only image";
     width: 90%;
     padding: 1em;
-}
+} */
 
 div.cards section.sodasprings {
     grid-template-areas:
-        "image info";
+        "image info-only";
 }
 
 div.cards section .info {

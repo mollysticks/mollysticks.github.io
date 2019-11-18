@@ -8,8 +8,10 @@ fetch(dataSourceURL)
         const towns = jsonObj['towns'];
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
+                let townName = towns[i].name.replace(/\s+/g, "");
+                townName = townName.replace(/.*/, function (x) { return x.toLowerCase(); });
                 let town = document.createElement('section');
-                town.className = "town-section";
+                town.className = townName;
                 let townInformation = document.createElement('div');
                 townInformation.className = "town-info";
                 let name = document.createElement('h2');
@@ -29,6 +31,8 @@ fetch(dataSourceURL)
 
                 image.setAttribute('src', 'images/' + towns[i].photo);
                 image.setAttribute('alt', "Image of " + towns[i].name);
+
+
 
                 name.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
