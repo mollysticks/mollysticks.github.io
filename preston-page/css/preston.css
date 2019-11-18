@@ -218,6 +218,9 @@ legend {
     padding: 10px;
 }
 
+/*Home page css*/
+
+
 
 @media only screen and (max-width: 768px) {
 /* navigation css small */
@@ -291,6 +294,7 @@ footer {
 .image-box, figcaption {
     width: 90%;
 }
+
 
 
 }

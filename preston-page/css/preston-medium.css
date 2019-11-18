@@ -44,5 +44,37 @@
         width: 100%;
         margin: auto;        
     }
+
+/*Homepage css*/
+div.cards {
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+}
+
+.cards section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    grid-template-areas: "info image";
+    width: 90%;
+    padding: 1em;
+}
+
+div.cards section.sodasprings {
+    grid-template-areas:
+        "image info";
+}
+
+div.cards section .info {
+    grid-area: info;
+}
+
+div.cards section .image {
+    grid-area: image;
+    height: auto;
+    width: 95%;
+    margin: auto;
+}
+
     
 }
