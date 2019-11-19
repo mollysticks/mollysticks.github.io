@@ -231,7 +231,7 @@ legend {
     order: 3;
 }
 
-.town-info {
+.preston, .sodasprings, .fishhaven {
     border: 1px solid #041b2a;
     background-color: #ffffff;
     color: #041b2a;
@@ -311,6 +311,21 @@ footer {
     width: 90%;
 }
 
+/*homepage css*/
+.cards {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 0px;
+    margin: auto;
+}
 
+.preston, .sodasprings, .fishhaven {
+    padding: 10px;
+}
+
+.preston, .sodasprings {
+    margin-bottom: 20px;
+}
 
 }

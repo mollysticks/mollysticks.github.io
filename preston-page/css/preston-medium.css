@@ -1,7 +1,8 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 999px) {
     /* navigation css medium */
     .navigation {
         display: flex;
+        padding: 0px;
     }
 
     .navigation li:first-child {
@@ -47,40 +48,41 @@
 
 /*Homepage css*/
 .cards {
-    grid-template-rows: 1fr 1fr 1fr;
     display: grid;
-}
-
-.preston {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "info-only image";
-}
-/* 
-.cards section {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    align-items: center;
-    grid-template-areas: "info-only image";
-    width: 90%;
-    padding: 1em;
-} */
-
-div.cards section.sodasprings {
-    grid-template-areas:
-        "image info-only";
-}
-
-div.cards section .info {
-    grid-area: info;
-}
-
-div.cards section .image {
-    grid-area: image;
-    height: auto;
-    width: 95%;
+    grid-template-rows: 1fr 1fr 1fr;  
+    justify-items: center; 
+    width: 80%;
     margin: auto;
 }
+
+.preston, .sodasprings {
+    margin-bottom: 30px;
+}
+
+.sodasprings .info-only {
+    word-wrap: break-word;
+    max-width: 260px;
+}
+
+.fishhaven {
+    width: 85%;
+}
+
+.preston .info-only, .sodasprings .city-image, .fishhaven .info-only {
+    float: left;
+    margin: 30px
+}
+
+.sodasprings h3 {
+    text-overflow: unset;
+}
+
+.preston .city-image, .sodasprings .info-only, .fishhaven .city-image {
+    float: right;
+    margin: 30px;
+}
+
+
 
     
 }
