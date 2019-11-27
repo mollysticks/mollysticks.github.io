@@ -68,11 +68,12 @@ fetch(currentWeatherRequestURL)
                     default:
                         break;                    
                 }
+                //going to set up the alt tag information soon
+                // let imagesrc = "http://openweathermap.org/img/wn/" + weatherList[i].weather[0].icon + "@2x.png";
+                // let iconDescription = "http://openweathermap.org/img/wn/" + weatherList[i].weather[0].description;
 
                 document.getElementById("day" + counter + "-name").innerHTML = currentDay;
-                document.getElementById("day" + counter + "-icon").src = "http://openweathermap.org/img/wn/" + weatherList[i].weather[0].icon + "@2x.png";
-                document.getElementById("day" + counter + "-icon").alt = "http://openweathermap.org/img/wn/" + weatherList[i].weather[0].description;
-
+                document.getElementById("day" + counter + "-icon").src = "http://openweathermap.org/img/wn/" + weatherList[i].weather[0].icon + "@2x.png";               
                 document.getElementById("day" + counter + "-temp").innerHTML = weatherList[i].main.temp;
 
                 counter++;
