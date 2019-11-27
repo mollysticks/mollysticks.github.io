@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>CIT 230 | Molly Wright's Weather Site Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/weather.js"></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="../preston-page/js/weather.js"></script>
+    <script src="../preston-page/js/preston.js"></script>  
 
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
-    <link rel="stylesheet" type="text/css" href="css/preston.css"> 
-    <link rel="stylesheet" type="text/css" href="css/preston-medium.css">
-    <link rel="stylesheet" type="text/css" href="css/preston-large.css">
+    <link rel="stylesheet" type="text/css" href="../preston-page/css/preston.css"> 
+    <link rel="stylesheet" type="text/css" href="../preston-page/css/preston-medium.css">
+    <link rel="stylesheet" type="text/css" href="../preston-page/css/preston-large.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <meta name="description" content="Weather site for Molly Wright, CIT 230 term project"/>
 </head> 
@@ -22,7 +22,7 @@
         </p>
         <div class="header-flex">
             <div id="image-flex">
-                <img src="images/lightning-logo.jpg" alt="Storm's Comin' logo" id="logo">
+                <img src="../preston-page/images/lightning-logo.jpg" alt="Storm's Comin' logo" id="logo">
             </div>
             <div id="heading-flex">
                 <h1>Storm's Comin' Weather</h1> <br>
@@ -34,12 +34,12 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="current" href="preston.html">Preston</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="current" href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="../preston-page/stormcenter.html">Storm Center</a></li>
+            <li><a href="../preston-page/gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -47,21 +47,21 @@
             <h2>Preston Idaho</h2>
             <div class="herodiv"> 
                 <picture>
-                    <img src="images/town-storm-900.jpg" alt="lightning storm over town" id="town-storm">
+                    <img src="../preston-page/images/town-storm-900.jpg" alt="lightning storm over town" id="town-storm">
                 </picture>
                 <section class="stats">
                     <h3>Weather Summary</h3>
                     <hr>
                     <p>
-                        Currently: Cloudy
+                        Currently: <span id="current-weather"></span>
                         <br>
-                        High: <span id="high-temp">49</span>&#8457;
+                        High: <span id="high-temp"></span>&#8457;
                         <br>
-                        Wind Chill: <span id="chill"></span>
+                        Wind Chill <small>(feels like)</small>: <span id="chill"></span>&#8457;
                         <br>
-                        Humidity: 36%
+                        Humidity: <span id="humidity"></span>%
                         <br>
-                        Wind Speed: <span id="wind-speed">4</span> mph
+                        Wind Speed: <span id="wind-speed"></span> mph
                     </p>
                 </section>
             </div>
@@ -69,32 +69,32 @@
                 <h3>5 Day Forecast</h3>
                 <table id="5-day-forecast">
                     <tr>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
+                        <th id="day1-name"></th>
+                        <th id="day2-name"></th>
+                        <th id="day3-name"></th>
+                        <th id="day4-name"></th>
+                        <th id="day5-name"></th>
                     </tr>
-                    <tr id="images">
-                        <td><img src="images/cloud.jpg" alt="cloud"></td>
-                        <td><img src="images/sun.jpg" alt="sun"></td>
-                        <td><img src="images/cloud.jpg" alt="cloud"></td>
-                        <td><img src="images/rain.jpg" alt="rain"></td>
-                        <td><img src="images/thunder.jpg" alt="storm cloud"></td>
+                    <tr id="weather-icons">
+                        <td><img id="day1-icon"></td>
+                        <td><img id="day2-icon"></td>
+                        <td><img id="day3-icon"></td>
+                        <td><img id="day4-icon"></td>
+                        <td><img id="day5-icon"></td>
                     </tr>
                     <tr>
-                        <td>50&#8457;</td>
-                        <td>57&#8457;</td>
-                        <td>45&#8457;</td>
-                        <td>45&#8457;</td>
-                        <td>48&#8457;</td>
+                        <td><span id="day1-temp"></span>&#8457;</td>
+                        <td><span id="day2-temp"></span>&#8457;</td>
+                        <td><span id="day3-temp"></span>&#8457;</td>
+                        <td><span id="day4-temp"></span>&#8457;</td>
+                        <td><span id="day5-temp"></span>&#8457;</td>
                     </tr>
                 </table>                    
             </div>
             <div class="article">
                 <picture>
-                    <source srcset="images/two-women.jpg" media="(min-width: 400px)">
-                    <img src="images/two-women-190.jpg" alt="2 women on car watching storm" id="article-image">
+                    <source srcset="../preston-page/images/two-women.jpg" media="(min-width: 400px)">
+                    <img src="../preston-page/images/two-women-190.jpg" alt="2 women on car watching storm" id="article-image">
     
                 </picture>
                 
@@ -113,12 +113,12 @@
             </div>
             <div class="contact">
                 <div id="contact-image">
-                    <img src="images/preston-map.jpg" alt="image of map of preston idaho" id="map">
+                    <img src="../preston-page/images/preston-map.jpg" alt="image of map of preston idaho" id="map">
                 </div>
                 <div id="contact-text-flex">
                     <div id="contact-text">
                         <h3>Storm's Comin' Weather!</h3>
-                        <p> <img src="images/map-location.jpg" alt="google map location symbol" id="google"> 
+                        <p> <img src="../preston-page/images/map-location.jpg" alt="google map location symbol" id="google"> 
                             E 4th N <br>
                             Preston, ID 83263
                             <br>
@@ -146,5 +146,5 @@
                 ]
             }
         });
-    </script>
+    </script> 
 </body>

@@ -101,7 +101,7 @@ h1, h2, p {margin: 0;}
     margin: auto;
 }
 
-table #images {
+table #weather-icons {
     padding: 0px 5px;
 }
 
@@ -141,6 +141,10 @@ table #images {
 #contact-text {
     padding-top: 10px;
     float: right;
+}
+
+#weather-icons {
+    background-color: #FFEC1F;
 }
 
 /* gallery css */
