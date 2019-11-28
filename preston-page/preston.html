@@ -5,7 +5,7 @@
     <title>CIT 230 | Molly Wright's Weather Site Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/weather.js"></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="../preston-page/js/preston.js" defer></script> 
 
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
     <link rel="stylesheet" type="text/css" href="css/preston.css"> 
@@ -53,15 +53,15 @@
                     <h3>Weather Summary</h3>
                     <hr>
                     <p>
-                        Currently: Cloudy
+                        Currently: <span id="current-weather"></span>
                         <br>
-                        High: <span id="high-temp">49</span>&#8457;
+                        High: <span id="high-temp"></span>&#8457;
                         <br>
-                        Wind Chill: <span id="chill"></span>
+                        Wind Chill <small>(feels like)</small>: <span id="chill"></span>&#8457;
                         <br>
-                        Humidity: 36%
+                        Humidity: <span id="humidity"></span>%
                         <br>
-                        Wind Speed: <span id="wind-speed">4</span> mph
+                        Wind Speed: <span id="wind-speed"></span> mph
                     </p>
                 </section>
             </div>
@@ -69,25 +69,25 @@
                 <h3>5 Day Forecast</h3>
                 <table id="5-day-forecast">
                     <tr>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                    </tr>
-                    <tr id="images">
-                        <td><img src="images/cloud.jpg" alt="cloud"></td>
-                        <td><img src="images/sun.jpg" alt="sun"></td>
-                        <td><img src="images/cloud.jpg" alt="cloud"></td>
-                        <td><img src="images/rain.jpg" alt="rain"></td>
-                        <td><img src="images/thunder.jpg" alt="storm cloud"></td>
-                    </tr>
-                    <tr>
-                        <td>50&#8457;</td>
-                        <td>57&#8457;</td>
-                        <td>45&#8457;</td>
-                        <td>45&#8457;</td>
-                        <td>48&#8457;</td>
+                            <th id="day1-name"></th>
+                            <th id="day2-name"></th>
+                            <th id="day3-name"></th>
+                            <th id="day4-name"></th>
+                            <th id="day5-name"></th>
+                        </tr>
+                        <tr id="weather-icons">
+                            <td><img src="#" id="day1-icon" alt="Weather Icon"></td>
+                            <td><img src="#" id="day2-icon" alt="Weather Icon"></td>
+                            <td><img src="#" id="day3-icon" alt="Weather Icon"></td>
+                            <td><img src="#" id="day4-icon" alt="Weather Icon"></td>
+                            <td><img src="#" id="day5-icon" alt="Weather Icon"></td>
+                        </tr>
+                        <tr>
+                            <td><span id="day1-temp"></span>&#8457;</td>
+                            <td><span id="day2-temp"></span>&#8457;</td>
+                            <td><span id="day3-temp"></span>&#8457;</td>
+                            <td><span id="day4-temp"></span>&#8457;</td>
+                            <td><span id="day5-temp"></span>&#8457;</td>
                     </tr>
                 </table>                    
             </div>
