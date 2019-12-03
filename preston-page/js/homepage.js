@@ -10,7 +10,7 @@ fetch(dataSourceURL)
             if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
                 let townName = towns[i].name.replace(/\s+/g, "");
                 townName = townName.replace(/.*/, function (x) { return x.toLowerCase(); });
-                let town = document.createElement('section');
+                let town = document.createElement('a');
                 town.className = townName;
                 let townInformation = document.createElement('div');
                 townInformation.className = "town-info";
@@ -31,6 +31,7 @@ fetch(dataSourceURL)
 
                 image.setAttribute('src', 'images/' + towns[i].photo);
                 image.setAttribute('alt', "Image of " + towns[i].name);
+                town.setAttribute('href', townName + ".html");
 
 
 

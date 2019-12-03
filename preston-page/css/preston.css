@@ -41,11 +41,11 @@ nav ul {
     text-decoration: none;
 }
 
-a:link {
+nav a:link {
     color: #ACAEB1;
 }
 
-a:visited {
+nav a:visited {
     color: #fdfcfc;
 }
 
@@ -235,6 +235,8 @@ legend {
 }
 
 /*Home page css*/
+
+
 .sodasprings {
     order: 2;
 }
@@ -251,6 +253,7 @@ legend {
     border: 1px solid #041b2a;
     background-color: #ffffff;
     color: #041b2a;
+    text-decoration: none;
 }
 
 
