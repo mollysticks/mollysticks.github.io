@@ -1,19 +1,19 @@
-const currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
-const forecastWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
+const currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42&lon=111&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
+const forecastWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42&lon=111&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
 
 
 //function to get the weather summary info from API
 fetch(currentWeatherRequestURL)
     .then((response) => response.json())  
-    .then((prestonWeatherObject) => {
+    .then((fishHavenWeatherObject) => {
         //setting the high temp and wind speed from the object to local variables
-        let highTemp = prestonWeatherObject.main.temp_max;
-        let windSpeed = prestonWeatherObject.wind.speed;
+        let highTemp = fishHavenWeatherObject.main.temp_max;
+        let windSpeed = fishHavenWeatherObject.wind.speed;
 
         //grabbing the needed stats from the API object and putting it into the html
-        document.getElementById("current-weather").innerHTML = prestonWeatherObject.weather[0].main;
+        document.getElementById("current-weather").innerHTML = fishHavenWeatherObject.weather[0].main;
         document.getElementById("high-temp").innerHTML = highTemp;
-        document.getElementById("humidity").innerHTML = prestonWeatherObject.main.humidity;
+        document.getElementById("humidity").innerHTML = fishHavenWeatherObject.main.humidity;
         document.getElementById("wind-speed").innerHTML = windSpeed;
 
         //checking to see if wind chill can be calculated
