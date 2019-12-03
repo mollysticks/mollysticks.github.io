@@ -235,8 +235,6 @@ legend {
 }
 
 /*Home page css*/
-
-
 .sodasprings {
     order: 2;
 }
@@ -256,6 +254,30 @@ legend {
     text-decoration: none;
 }
 
+#winterstorm {
+    order: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+#intro-text {
+    order: 2;
+}
+
+.weather-intro {
+    border: 1px solid #041b2a;
+    width: 90%;
+    padding: 5px;
+    margin: 15px auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #041b2a;
+    color: #ACAEB1;
+}
+
+#article-title {
+    font-size: larger;
+}
 
 @media only screen and (max-width: 768px) {
 /* navigation css small */
@@ -345,6 +367,10 @@ footer {
 
 .preston, .sodasprings {
     margin-bottom: 20px;
+}
+
+.weather-intro {
+    display: block;
 }
 
 }
