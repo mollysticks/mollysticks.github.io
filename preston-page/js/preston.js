@@ -1,3 +1,21 @@
+const dataSourceURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(dataSourceURL)
+.then(function (response) {
+    return response.json();
+})
+.then(function (jsonObj) {
+    const towns = jsonObj['towns'];
+    let prestonObject = towns[4];
+    for (let i = 0; i < prestonObject.events.length; i++) {
+        let eventInfo = document.createElement('li');
+
+        eventInfo.textContent = prestonObject.events[i];
+
+        document.querySelector('div.events').appendChild(eventInfo);
+    }
+});
+
 const currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
 const forecastWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
 
