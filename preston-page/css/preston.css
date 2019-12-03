@@ -58,6 +58,18 @@ li:hover {
     background-color: #252525;
 }
 
+/*town page css*/
+.town-events {
+    text-align: center;
+    border: solid;
+    width: 40%;
+    margin: 10px auto;
+}
+
+.town-events li {
+    padding: 10px
+}
+
 /* preston town css */
 picture {
     width: 90%;
