@@ -36,7 +36,7 @@
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a class="current" href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
             <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -45,24 +45,40 @@
     <main>
         <section>
             <h2>Preston Idaho</h2>
+            <p id="sat-banner">Saturday = Preston Pancakes in the Park!
+                <br>
+                9:00 a.m. Saturday at the city park pavilion.
+            </p>
             <div class="herodiv"> 
                 <picture>
                     <img src="images/town-storm-900.jpg" alt="lightning storm over town" id="town-storm">
                 </picture>
                 <section class="stats">
-                    <h3>Weather Summary</h3>
-                    <hr>
-                    <p>
-                        Currently: <span id="current-weather"></span>
-                        <br>
-                        High: <span id="high-temp"></span>&#8457;
-                        <br>
-                        Wind Chill <small>(feels like)</small>: <span id="chill"></span>&#8457;
-                        <br>
-                        Humidity: <span id="humidity"></span>%
-                        <br>
-                        Wind Speed: <span id="wind-speed"></span> mph
-                    </p>
+                    <table>
+                        <tr>
+                            <th colspan="2">Weather Summary</th>
+                        </tr>
+                        <tr>
+                            <td>Currently: </td>
+                            <td><span id="current-weather"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High: </td>
+                            <td><span id="high-temp"></span>&#8457;</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill <small>(feels like)</small>: </td>
+                            <td><span id="chill"></span>&#8457;</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity: </td>
+                            <td><span id="humidity"></span>%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed: </td>
+                            <td><span id="wind-speed"></span> mph</td>
+                        </tr>
+                    </table>                   
                 </section>
             </div>
             <div class="forecast">
