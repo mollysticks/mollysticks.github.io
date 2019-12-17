@@ -1,0 +1,27 @@
+.navigation {
+    display: flex;
+    padding: 0px;
+    li {
+        display: block;
+        flex: 1 1 100%;    
+    }
+    li:first-child {
+        display: none;
+    }
+}
+
+nav {background-color: $navColor}
+
+.temple-pics {
+    display: block;
+}
+
+/* header footer css medium */
+.header-flex {
+    display: block;
+}
+
+footer {
+    width: 100%;
+}
+

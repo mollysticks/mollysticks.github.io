@@ -1,0 +1,55 @@
+header, nav, main, footer {
+    max-width: 1200px;
+    margin:auto;
+}
+
+#logo, h1, h2 {
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    max-width: 1200px;
+    ul {
+        margin: 0 auto;
+    }
+
+}
+
+.navigation {
+    display: flex;
+    padding: 0;
+    color: $textColor;
+    li {
+        display: block;
+        flex: 1 1 100%;
+        color: $textColor;
+    }
+    li:first-child {
+        display: none;
+    }
+}
+
+//Homepage css
+.temple-pics {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#temple1, #temple2, #temple3 {
+    padding: 10px;
+    justify-self: center;
+}
+
+#temple1, #temple3 {
+    padding-top: 30px;
+}
+
+
+
+
+

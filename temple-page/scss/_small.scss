@@ -1,0 +1,149 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+    margin: auto;
+    width: 100%;
+    color: $textColor;
+    background-color: $bodyColor;
+    justify-self: center;
+    font-family: $fontFamily;
+}
+
+#logo {
+    border-radius: 20px;;
+}
+
+header, footer {
+    background-color: $headerColor;
+    padding: 15px;
+    clear: left;
+    text-align: center;
+    h1 {
+        margin: 0; 
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+    } //end of h1
+    h2{
+        margin: 0; 
+        font-size: 1.2rem; 
+        font-weight: $regularWeight;
+    } //end of h2
+} //end of header and footer
+
+.header-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#heading-flex {
+    padding-left: 30px;
+    text-align: center;
+}
+ 
+
+nav {
+    background-color: $navColor;
+    ul {
+        margin:0; 
+        padding: 0;
+        max-width: 760px;
+    }
+    a {
+        display: block;
+        padding: .8rem 0; /*44px min*/
+        color: $textColor;
+        text-align: center;
+        text-decoration: none;
+}
+    a:hover {
+        background-color: $navHoverColor;
+        color: $bodyColor;
+    }
+    .current {
+        background-color: $paragraphColor;
+    }
+} //end of nav
+
+.navigation {
+    list-style: none;
+    text-align: none;
+    li {display: none;}
+    li:first-child {
+    display: block;
+    }
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    text-align: center;
+}
+
+#reserve-button {
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #c7dbdb;
+}
+
+#sa-temple-intro {
+    width: 70%;
+    border: solid $textColor;
+    background-color: $paragraphColor;
+    text-align: center;
+    padding: 20px;
+    justify-self: center;
+    margin: 10px auto 30px;
+    
+}
+
+.temples-intro {
+    display: block;
+    h3 {
+    padding-top: 30px;
+    font-size: xx-large;
+    padding-bottom: 0px;
+    }
+}
+
+#temple1, #temple2, #temple3 {
+    padding: 20px;
+}
+
+//contact info css
+.contact {
+    display: flex;
+    justify-content: space-around;
+    background-color: $paragraphColor;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;    
+}
+
+#contact-text-flex {
+    padding: 30px;
+}
+
+#contact-text {
+    padding-top: 10px;
+    float: right;
+}
+
+#map {
+    float: left;
+    margin: auto;
+}
+footer {
+    width: 80%;
+}
+
+
