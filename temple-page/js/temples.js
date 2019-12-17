@@ -58,7 +58,7 @@ fetch(dataSourceURL)
         templeName.textContent = temples[i].name;
         templeImage.setAttribute('src', temples[i].imageurl);
         templeImage.setAttribute('alt', temples[i].name);
-        templeAddress.textContent = temples[i].street + ' ' + temples[i].city + ' ' + temples[i].state + ' ' + temples[i].zip;
+        templeAddress.textContent = temples[i].address.street + ', ' + temples[i].address.city + ' ' + temples[i].address.state + ' ' + temples[i].address.zip;
         templePhone.textContent = temples[i].telephone;
         templeEmail.textContent = temples[i].email;
         
