@@ -60,12 +60,38 @@ fetch(dataSourceURL)
         templeImage.setAttribute('alt', temples[i].name);
         templeAddress.textContent = temples[i].address.street + ', ' + temples[i].address.city + ' ' + temples[i].address.state + ' ' + temples[i].address.zip;
         templePhone.textContent = temples[i].telephone;
-        templeEmail.textContent = temples[i].email;
+        templeEmail.textContent = temples[i].email;        
         
-        // for (let j = 0; j < temples[i].services.length; j++) {
-        //     let templeServicesList = document.createElement('li');
-        //     templeServices.appendChild(templeServicesList[j]);
-        // }
+        for (let j = 0; j < 3; j++) {
+            let templeServicesList = document.createElement('li');
+            templeServicesList.textContent += temples[i].services[j];
+            templeServices.appendChild(templeServicesList);
+        } 
+
+        for (let j = 0; j < temples[i].ordinances.baptism.length; j++) {
+            let templeBaptismList = document.createElement('li');
+            templeBaptismList.textContent += temples[i].ordinances.baptism[j];
+            templeBaptism.appendChild(templeBaptismList);
+        }       
+        
+        for (let j = 0; j < temples[i].ordinances.initiatories.length; j++) {
+            let templeInitiatoryList = document.createElement('li');
+            templeInitiatoryList.textContent += temples[i].ordinances.initiatories[j];
+            templeInitiatory.appendChild(templeInitiatoryList);
+        } 
+
+        for (let j = 0; j < temples[i].ordinances.endowments.length; j++) {
+            let templeEndowmentsList = document.createElement('li');
+            templeEndowmentsList.textContent += temples[i].ordinances.endowments[j];
+            templeEndowment.appendChild(templeEndowmentsList);
+        } 
+
+        for (let j = 0; j < temples[i].ordinances.sealings.length; j++) {
+            let templeSealingsList = document.createElement('li');
+            templeSealingsList.textContent += temples[i].ordinances.sealings[j];
+            templeSealing.appendChild(templeSealingsList);
+        } 
+        
         
         templeContact.appendChild(templeAddress);
         templeContact.appendChild(templePhone);
@@ -73,7 +99,13 @@ fetch(dataSourceURL)
         temple.appendChild(templeName);
         temple.appendChild(templeImage);
         temple.appendChild(templeContact);
-        // temple.appendChild(templeServices);
+        temple.appendChild(templeServices);
+        templeOrdinances.appendChild(templeBaptism);
+        templeOrdinances.appendChild(templeInitiatory);
+        templeOrdinances.appendChild(templeEndowment);
+        templeOrdinances.appendChild(templeSealing);
+        temple.appendChild(templeOrdinances);
+
 
         document.querySelector('div.cards').appendChild(temple);
     }
