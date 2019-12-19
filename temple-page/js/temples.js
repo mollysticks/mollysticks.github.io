@@ -73,9 +73,7 @@ fetch(dataSourceURL)
         templeInfoGrid.className = "info-grid";
         let templeSummary = document.createElement('p');
         templeSummary.className = "temple-summary";
-        let cityName = temples[i].name.replace(/\s+/g, "");
-        cityName = cityName.replace(/.*/, function (x) { return x.toLowerCase(); });
-        let cityWeather = document.createElement('p');
+        // let cityWeather = document.createElement('p');
 
         templeName.textContent = temples[i].name;
         templeImage.setAttribute('src', temples[i].imageurl);
@@ -85,9 +83,7 @@ fetch(dataSourceURL)
         templeEmail.textContent = "✉️" + temples[i].email;  
         
         templeSummary.textContent = temples[i].summary;
-        console.log(templeSummary);
-        console.log(temples[i].summary);
-        
+      
         templeServices.textContent = "Services offered"
         for (let j = 0; j < 3; j++) {
             let templeServicesList = document.createElement('li');
@@ -141,16 +137,20 @@ fetch(dataSourceURL)
 
         templeSummary.textContent = temples[i].summary;
 
-        if (cityName == "dallas") {
-            const currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
-        }
+        let cityName = temples[i].city;
+        console.log(cityName);
+        // if (cityName == "dallas") {
+        //     let currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
+        //     return currentWeatherRequestURL;
+        // }
+        // console.log(currentWeatherRequestURL);
 
-    fetch(currentWeatherRequestURL)
-    .then((response) => response.json())  
-    .then((cityWeatherObject) => {
-        let currentWeather = Math.round(cityWeatherObject[i].main.temp);
-        cityWeather.textContent = "The current weather is " + currentWeather + " degree farenheit.";
-    });
+        // fetch(currentWeatherRequestURL)
+        // .then((response) => response.json())  
+        // .then((cityWeatherObject) => {
+        //     let currentWeather = Math.round(cityWeatherObject[i].main.temp);
+        //     cityWeather.textContent = "The current weather is " + currentWeather + " degrees farenheit.";
+        // });
         
         
         templeContact.appendChild(templeAddress);

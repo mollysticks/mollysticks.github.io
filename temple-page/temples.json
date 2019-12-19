@@ -76,7 +76,7 @@
 
         {
             "name": "San Antonio Texas Temple",
-            "city": "sanantonio"
+            "city": "sanantonio",
             "address": {
                 "street":"20080 Stone Oak Pkwy",
                 "city": "San Antonio",
