@@ -72,6 +72,10 @@ fetch(dataSourceURL)
         templeInfoGrid = document.createElement('div');
         templeInfoGrid.className = "info-grid";
         let templeSummary = document.createElement('p');
+        templeSummary.className = "temple-summary";
+        let cityName = temples[i].name.replace(/\s+/g, "");
+        cityName = cityName.replace(/.*/, function (x) { return x.toLowerCase(); });
+        let cityWeather = document.createElement('p');
 
         templeName.textContent = temples[i].name;
         templeImage.setAttribute('src', temples[i].imageurl);
@@ -136,6 +140,17 @@ fetch(dataSourceURL)
         } 
 
         templeSummary.textContent = temples[i].summary;
+
+        if (cityName == "dallas") {
+            const currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
+        }
+
+    fetch(currentWeatherRequestURL)
+    .then((response) => response.json())  
+    .then((cityWeatherObject) => {
+        let currentWeather = Math.round(cityWeatherObject[i].main.temp);
+        cityWeather.textContent = "The current weather is " + currentWeather + " degree farenheit.";
+    });
         
         
         templeContact.appendChild(templeAddress);

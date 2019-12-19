@@ -494,6 +494,16 @@ main {
 #temple1, #temple2, #temple3 {
   padding: 20px; }
 
+.inn-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .inn-services li {
+    align-self: flex-start;
+    text-align: left; }
+
+.inn-services h3, .inn-ammenities h3 {
+  align-self: center; }
+
 .temple-complete {
   background-color: #cfcbcb;
   border: 1px solid #041b2a;
@@ -529,9 +539,27 @@ ul {
 .info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 100px 300px;
   justify-content: space-around;
   align-items: center; }
+
+.temple-services {
+  grid-column-start: 1; }
+
+.temple-history {
+  grid-column-start: 2; }
+
+.temple-closures {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-top: 5px;
+  margin-top: 0;
+  align-self: flex-start; }
+
+.temple-summary {
+  grid-column: 1 / span 2;
+  grid-row-start: 2; }
 
 .contact {
   display: flex;

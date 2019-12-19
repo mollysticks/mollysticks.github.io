@@ -1,6 +1,7 @@
 {
     "temples": [{
         "name": "Dallas Texas Temple",
+        "city": "dallas",
         "address": {
             "street":"6363 Willow Ln",
             "city": "Dallas",
@@ -25,6 +26,7 @@
 
         {
             "name": "Houston Texas Temple",
+            "city": "houston", 
             "address": {
                 "street":"15725 Chamption Forest Dr",
                 "city": "Spring",
@@ -49,6 +51,7 @@
 
         {
             "name": "Lubbock Texas Temple",
+            "city": "lubbock", 
             "address": {
                 "street":"7016 Frankford Ave",
                 "city": "Lubbock",
@@ -73,6 +76,7 @@
 
         {
             "name": "San Antonio Texas Temple",
+            "city": "sanantonio"
             "address": {
                 "street":"20080 Stone Oak Pkwy",
                 "city": "San Antonio",
