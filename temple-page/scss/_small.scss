@@ -164,10 +164,13 @@ main {
 
 //services page
 .services-page {
-    text-align: left;
+    
     border: 1 solid $textColor;
     background-color: $navColor;
     margin: 20px;
+    ul, h3 {
+        text-align: left;
+    }
 }
 
 //contact info css

@@ -529,10 +529,11 @@ main {
   justify-self: left; }
 
 .services-page {
-  text-align: left;
   border: 1 solid #041b2a;
   background-color: #f7e7e7;
   margin: 20px; }
+  .services-page ul, .services-page h3 {
+    text-align: left; }
 
 .contact {
   display: flex;
