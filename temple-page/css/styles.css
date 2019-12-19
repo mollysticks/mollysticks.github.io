@@ -494,6 +494,45 @@ main {
 #temple1, #temple2, #temple3 {
   padding: 20px; }
 
+.temple-complete {
+  background-color: #cfcbcb;
+  border: 1px solid #041b2a;
+  margin: 30px; }
+
+.temple-image {
+  height: 300px;
+  width: 300px; }
+
+.temple-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.ordinance-header {
+  font-size: large;
+  margin: 20px 0 2px 0; }
+
+.ordinanceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.baptism, .initiatories, .endowments, .sealings {
+  border: 1px solid #041b2a;
+  background-color: #f7e7e7;
+  border-radius: 5px;
+  margin: 5px;
+  justify-self: left; }
+
+ul {
+  padding: 30px; }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center; }
+
 .contact {
   display: flex;
   justify-content: space-around;

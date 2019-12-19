@@ -119,6 +119,54 @@ main {
     padding: 20px;
 }
 
+//temples page
+.temple-complete {
+    background-color: $headerColor;
+    border: 1px solid $textColor; 
+    margin: 30px;
+}
+
+.temple-image {
+    height: 300px;
+    width: 300px;
+}
+.temple-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ordinance-header {
+    font-size: large;
+    margin: 20px 0 2px 0;
+}
+
+.ordinanceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.baptism, .initiatories, .endowments, .sealings {
+    border: 1px solid $textColor;
+    background-color: $navColor;
+    border-radius: 5px;
+    margin: 5px;
+    justify-self: left;
+}
+
+ul {
+    padding: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 //contact info css
 .contact {
     display: flex;
