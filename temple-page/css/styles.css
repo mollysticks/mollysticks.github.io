@@ -561,6 +561,11 @@ ul {
   grid-column: 1 / span 2;
   grid-row-start: 2; }
 
+.services-page {
+  text-align: left;
+  border: 1 solid #041b2a;
+  background-color: #f7e7e7; }
+
 .contact {
   display: flex;
   justify-content: space-around;

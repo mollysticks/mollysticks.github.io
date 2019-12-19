@@ -202,6 +202,12 @@ ul {
     grid-row-start: 2;
 }
 
+//services page
+.services-page {
+    text-align: left;
+    border: 1 solid $textColor;
+    background-color: $navColor;
+}
 
 //contact info css
 .contact {
