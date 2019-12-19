@@ -44,7 +44,7 @@ fetch(dataSourceURL)
         templeSummary.className = "temple-summary";
         let cityWeather = document.createElement('p');
         let cityWeatherFetch = document.createElement('div');
-        cityWeatherFetch.className = ("weather-fetch");
+        cityWeatherFetch.setAttribute = ("id", "weather-fetch");
         cityWeather.className = "city-weather";
 
         templeName.textContent = temples[i].name;
@@ -111,9 +111,9 @@ fetch(dataSourceURL)
 
         let cityName = temples[i].city;
         
-        cityWeather.textContent = "The current temperature is ";
+        cityWeather.textContent = "The current temperature is " + cityWeatherFetch;
 
-        cityWeather.appendChild(cityWeatherFetch);
+        //cityWeather.appendChild(getCurrentWeather());
         
         
         templeContact.appendChild(templeAddress);
@@ -135,13 +135,26 @@ fetch(dataSourceURL)
         templeInfoGrid.appendChild(templeClosures);
         templeInfoGrid.appendChild(templeSummary);
         temple.appendChild(templeInfoGrid);
-        //temple.appendChild(cityWeather);
+        temple.appendChild(cityWeather);
 
         document.querySelector('div.cards').appendChild(temple);
     }
 });
 
-// //getting the current weather information
+function getCurrentWeather() {
+    let currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
+    fetch(currentWeatherRequestURL)
+        .then((response) => response.json())
+        .then(function(cityWeatherObject) {
+            let currentWeatherFetch = Math.round(cityWeatherObject.main.temp);
+            document.getElementById("weather-fetch").innerHTML = currentWeatherFetch;
+            console.log(currentWeatherFetch);
+        });
+}
+getCurrentWeather();
+
+
+// // //getting the current weather information
 // async function getCurrentWeather() {
 // let currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
 //     await fetch(currentWeatherRequestURL)
@@ -150,9 +163,7 @@ fetch(dataSourceURL)
 //         })
 //         .then(function(cityWeatherObject) {
 //             let currentWeatherFetch = Math.round(cityWeatherObject.main.temp);
-//             console.log(currentWeatherFetch);
-//              currentWeatherFetch;
-            
+//             console.log(currentWeatherFetch);            
 //         })
         
 //         }

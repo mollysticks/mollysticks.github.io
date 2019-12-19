@@ -49,7 +49,52 @@ nav {
     padding-top: 30px;
 }
 
+//temples page
+.temple-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.ordinanceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temple-services {
+    grid-column-start: 1;
+}
+
+.temple-history {
+    grid-column-start: 2
+}
+
+.temple-closures {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 5px;
+    margin-top: 0;
+    align-self: flex-start;
+}
+
+.temple-summary {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+}
+
+//contact info
+.contact {
+    width: 80%;
+}
 
 
 

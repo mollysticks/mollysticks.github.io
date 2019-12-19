@@ -138,26 +138,20 @@ main {
     background-color: $headerColor;
     border: 1px solid $textColor; 
     margin: 30px;
+    display: block;
+    ul {
+        list-style-position: inside;
+        padding: 30px;
+    }
 }
 
 .temple-image {
     height: 300px;
     width: 300px;
 }
-.temple-flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .ordinance-header {
     font-size: large;
     margin: 20px 0 2px 0;
-}
-
-.ordinanceGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .baptism, .initiatories, .endowments, .sealings {
@@ -168,45 +162,12 @@ main {
     justify-self: left;
 }
 
-ul {
-    padding: 30px;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 300px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.temple-services {
-    grid-column-start: 1;
-}
-
-.temple-history {
-    grid-column-start: 2
-}
-
-.temple-closures {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding-top: 5px;
-    margin-top: 0;
-    align-self: flex-start;
-}
-
-.temple-summary {
-    grid-column: 1 / span 2;
-    grid-row-start: 2;
-}
-
 //services page
 .services-page {
     text-align: left;
     border: 1 solid $textColor;
     background-color: $navColor;
+    margin: 20px;
 }
 
 //contact info css
@@ -214,7 +175,7 @@ ul {
     display: flex;
     justify-content: space-around;
     background-color: $paragraphColor;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;    
 }
