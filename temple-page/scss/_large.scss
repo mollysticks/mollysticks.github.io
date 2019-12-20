@@ -100,7 +100,7 @@ nav {
 //services page
 .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
 }
 
@@ -133,11 +133,15 @@ nav {
 }
 
 //reservation page
-.reservation-form input[type=text],
-.reservation-form input[type=email],
-.reservation-form input[type=tel],
-.reservation-form input[type=date], #information {
-    width: 80%;
+.reservation-form {
+    display: flex;
+    padding: 5px;
+    // flex-direction: column;
+}
+
+#information {
+    width: 150%;
+    padding: 10px;
 }
 //contact info
 .contact {

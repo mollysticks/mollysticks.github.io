@@ -27,53 +27,28 @@
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="temples.html">Temples</a></li>
-            <li><a class="current" href="services.html">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="reservation.html">Reservations</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
+            <li><a class="current" href="contact-us.html">Contact</a></li>
         </ul>
     </nav>
     <main>
-       <div id="wedding">
-            <h3>Peaceful wedding reception spaces</h3>
-            <div id="wedding-photos">
-                <img src="images/wedding1.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding2.jpg" alt="wedding dining area you can rent">
-                <img src="images/wedding3.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding4.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding5.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding6.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding7.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding8.jpg" alt="wedding dining space you can rent">
-                <img src="images/wedding9.jpg" alt="wedding dining space you can rent">
-            </div>
-       </div>
 
-       <div id="wedding-food">
-           <div id="cakes">
-               <h3>Wedding cakes</h3>
-               <img src="images/cake1.jpg" alt="white wedding cake">
-               <img src="images/cake2.jpg" alt="white wedding cake">
-               <img src="images/cake3.jpg" alt="white wedding cake">
-           </div>
-           <div id="catering">
-               <h3>Dining options</h3>
-               <img src="images/sample-menu.jpg" alt="Words: Sample Menu with some food behind it">
-               <div id="menu-flex">
-                   <ul id="menu1">
-                       <li>Appetizer: Spice Marinated Eggplant</li>
-                       <li>Salad course: Arugala, brie, leaf lettuce, and reduced balsamic</li>
-                       <li>Main: Pan Seared Sea Bass</li>
-                       <li>Dessert: Blueberry White Chocolate Napoleon</li>
-                   </ul>
-                   <ul id="menu2">
-                       <li>Appetizer: Mini Chicken & Waffle Slider</li>
-                       <li>Salad: Roasted beets, sunflower seeds and sprouts, white balsamic</li>
-                       <li>Main: Smoked Beef Tenderloin</li>
-                       <li>Dessert: Blueberry White Chocolate Napoleon</li>
-                   </ul>
-               </div>
-           </div>
-       </div>
+        <div class="missionary-grid">
+            
+        </div>
+        <fieldset class="contact-form">
+            <legend>Contact us</legend>
+            <label for="name">Full Name*</label>
+            <input id ="name" type="text" name="name" placeholder="" pattern="[A-z\s]{5,}" required autocomplete="off">
+
+            <label for="user-email">Email Address <em>(name@domain.com)</em></label>
+            <input id="user-email" type="email" name="email" placeholder="name@domain.com"  autocomplete="off">
+            
+            <label for="information">Need more information?</label>
+            <textarea id="information" name="informationtext"></textarea>
+            
+        </fieldset>
                 
 
         <div class="contact">
