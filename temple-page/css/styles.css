@@ -505,8 +505,6 @@ main {
   align-self: center; }
 
 .temple-complete {
-  background-color: #cfcbcb;
-  border: 1px solid #041b2a;
   margin: 30px;
   display: block; }
   .temple-complete ul {
@@ -528,12 +526,51 @@ main {
   margin: 5px;
   justify-self: left; }
 
+#dallas, #houston, #lubbock, #san-antonio {
+  border: 1px solid #041b2a;
+  background-color: #c7dbdb;
+  margin: 10px auto;
+  padding: 5px;
+  width: 30%; }
+
+#motto {
+  width: 100%;
+  border: 1px solid #041b2a;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 5px; }
+
+#weather-info {
+  border: 1px solid #041b2a;
+  margin: 20px auto;
+  padding: 5px;
+  background-color: #c7dbdb;
+  width: 100%; }
+
 .services-page {
-  border: 1 solid #041b2a;
+  border: 1px solid #041b2a;
   background-color: #f7e7e7;
   margin: 20px; }
   .services-page ul, .services-page h3 {
     text-align: left; }
+
+#specialized-services-grid, #amenities-grid {
+  border: 1px solid #041b2a;
+  background-color: #c7dbdb;
+  padding: 5px;
+  margin: 5px auto; }
+
+#wedding-photos img {
+  height: 200px;
+  width: 200px;
+  padding: 10px; }
+
+#cakes img {
+  height: 150px;
+  width: 150px; }
+
+#menu-flex {
+  text-align: left; }
 
 .contact {
   display: flex;
@@ -633,7 +670,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 300px;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    background-color: #cfcbcb;
+    border: 1px solid #041b2a; }
 
   .temple-services {
     grid-column-start: 1; }
@@ -652,6 +691,37 @@ footer {
   .temple-summary {
     grid-column: 1 / span 2;
     grid-row-start: 2; }
+
+  #weather-info {
+    width: 60%; }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around; }
+
+  #services-image {
+    justify-self: center;
+    align-self: center; }
+
+  #motto {
+    width: 80%; }
+
+  #wedding-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
+    justify-content: space-around;
+    margin: auto; }
+
+  #wedding-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  #menu-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
 
   .contact {
     width: 80%; } }

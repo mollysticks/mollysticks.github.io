@@ -134,9 +134,7 @@ main {
 }
 
 //temples page
-.temple-complete {
-    background-color: $headerColor;
-    border: 1px solid $textColor; 
+.temple-complete { 
     margin: 30px;
     display: block;
     ul {
@@ -162,15 +160,67 @@ main {
     justify-self: left;
 }
 
+#dallas, #houston, #lubbock, #san-antonio {
+    border: 1px solid $textColor;
+    background-color: $buttonColor;
+    margin: 10px auto;
+    padding: 5px;
+    width: 30%;
+}
+
+#motto {
+    width: 100%;
+    border: 1px solid $textColor;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+#weather-info {
+    border: 1px solid $textColor;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: $buttonColor;
+    width: 100%;
+}
+
 //services page
 .services-page {
     
-    border: 1 solid $textColor;
+    border: 1px solid $textColor;
     background-color: $navColor;
     margin: 20px;
     ul, h3 {
         text-align: left;
     }
+}
+
+#specialized-services-grid, #amenities-grid {
+    border: 1px solid $textColor;
+    background-color: $buttonColor;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+//wedding reception page
+#wedding-photos {
+    
+    img {
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+    }
+}
+
+#cakes {
+    img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+#menu-flex {
+    text-align: left;
 }
 
 //contact info css

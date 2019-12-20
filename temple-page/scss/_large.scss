@@ -67,6 +67,8 @@ nav {
     grid-template-rows: 100px 300px;
     justify-content: space-around;
     align-items: center;
+    background-color: $headerColor;
+    border: 1px solid $textColor;
 }
 
 .temple-services {
@@ -89,6 +91,45 @@ nav {
 .temple-summary {
     grid-column: 1 / span 2;
     grid-row-start: 2;
+}
+
+#weather-info {
+    width: 60%;
+}
+
+//services page
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+#services-image {
+    justify-self: center;
+    align-self: center;
+}
+
+#motto {
+    width: 80%;
+}
+
+#wedding-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#wedding-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#menu-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 //contact info

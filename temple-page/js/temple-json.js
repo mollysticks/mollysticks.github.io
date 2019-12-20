@@ -5,8 +5,8 @@ fetch(dataSourceURL)
     return response.json();
 })
 .then(function (jsonObj) {
-    const temples = jsonObj['temples'];
-    for (let i = 0; i < temples.length; i++) {
+    const dallasTemple = jsonObj['temples'];
+    if (dallasTemple.city == "dallas") {
         let temple = document.createElement('div');
         temple.className = "temple-complete";
         let templeFlex = document.createElement('div');
@@ -42,78 +42,74 @@ fetch(dataSourceURL)
         templeInfoGrid.className = "info-grid";
         let templeSummary = document.createElement('p');
         templeSummary.className = "temple-summary";
-        let cityWeather = document.createElement('p');
-        let cityWeatherFetch = document.createElement('div');
-        cityWeatherFetch.setAttribute = ("id", "weather-fetch");
-        cityWeather.className = "city-weather";
 
-        templeName.textContent = temples[i].name;
-        templeImage.setAttribute('src', temples[i].imageurl);
-        templeImage.setAttribute('alt', temples[i].name);
-        templeAddress.textContent = temples[i].address.street + ', ' + temples[i].address.city + ' ' + temples[i].address.state + ' ' + temples[i].address.zip;
-        templePhone.textContent = "☎️" + temples[i].telephone;
-        templeEmail.textContent = "✉️" + temples[i].email;  
+        templeName.textContent = dallasTemple.name;
+        templeImage.setAttribute('src', dallasTemple.imageurl);
+        templeImage.setAttribute('alt', dallasTemple.name);
+        templeAddress.textContent = dallasTemple.address.street + ', ' + dallasTemple.address.city + ' ' + dallasTemple.address.state + ' ' + dallasTemple.address.zip;
+        templePhone.textContent = "☎️" + dallasTemple.telephone;
+        templeEmail.textContent = "✉️" + dallasTemple.email;  
         
-        templeSummary.textContent = temples[i].summary;
+        templeSummary.textContent = dallasTemple.summary;
       
         templeServices.textContent = "Services offered"
         for (let j = 0; j < 3; j++) {
             let templeServicesList = document.createElement('li');
-            templeServicesList.textContent += temples[i].services[j];
+            templeServicesList.textContent += dallasTemple.services[j];
             templeServices.appendChild(templeServicesList);
         } 
 
         templeOrdinanceHeader.textContent = "Ordinance Schedule";
 
         templeBaptism.textContent = "Baptism";
-        for (let j = 0; j < temples[i].ordinances.baptism.length; j++) {
+        for (let j = 0; j < dallasTemple.ordinances.baptism.length; j++) {
             let templeBaptismList = document.createElement('li');
-            templeBaptismList.textContent += temples[i].ordinances.baptism[j];
+            templeBaptismList.textContent += dallasTemple.ordinances.baptism[j];
             templeBaptism.appendChild(templeBaptismList);
         }       
         
         templeInitiatory.textContent = "Initiatory";
-        for (let j = 0; j < temples[i].ordinances.initiatories.length; j++) {
+        for (let j = 0; j < dallasTemple.ordinances.initiatories.length; j++) {
             let templeInitiatoryList = document.createElement('li');
-            templeInitiatoryList.textContent += temples[i].ordinances.initiatories[j];
+            templeInitiatoryList.textContent += dallasTemple.ordinances.initiatories[j];
             templeInitiatory.appendChild(templeInitiatoryList);
         } 
 
         templeEndowment.textContent = "Endowments";
-        for (let j = 0; j < temples[i].ordinances.endowments.length; j++) {
+        for (let j = 0; j < dallasTemple.ordinances.endowments.length; j++) {
             let templeEndowmentsList = document.createElement('li');
-            templeEndowmentsList.textContent += temples[i].ordinances.endowments[j];
+            templeEndowmentsList.textContent += dallasTemple.ordinances.endowments[j];
             templeEndowment.appendChild(templeEndowmentsList);
         } 
 
         templeSealing.textContent = "Sealing";
-        for (let j = 0; j < temples[i].ordinances.sealings.length; j++) {
+        for (let j = 0; j < dallasTemple.ordinances.sealings.length; j++) {
             let templeSealingsList = document.createElement('li');
-            templeSealingsList.textContent += temples[i].ordinances.sealings[j];
+            templeSealingsList.textContent += dallasTemple.ordinances.sealings[j];
             templeSealing.appendChild(templeSealingsList);
         } 
 
         templeHistory.textContent = "History";
-        for (let j = 0; j < temples[i].history.length; j++) {
+        for (let j = 0; j < dallasTemple.history.length; j++) {
             let templeHistoryList = document.createElement('li');
-            templeHistoryList.textContent += temples[i].history[j];
+            templeHistoryList.textContent += dallasTemple.history[j];
             templeHistory.appendChild(templeHistoryList);
         } 
 
         templeClosures.textContent = "Closures";
-        for (let j = 0; j < temples[i].closures.length; j++) {
+        for (let j = 0; j < dallasTemple.closures.length; j++) {
             let templeClosuresList = document.createElement('li');
-            templeClosuresList.textContent += temples[i].closures[j];
+            templeClosuresList.textContent += dallasTemple.closures[j];
             templeClosures.appendChild(templeClosuresList);
         } 
 
-        templeSummary.textContent = temples[i].summary;
+        templeSummary.textContent = dallasTemple.summary;
 
-        let cityName = temples[i].city;
         
-        cityWeather.textContent = "The current temperature is " + cityWeatherFetch;
+        
+        // cityWeather.textContent = "The current temperature is " + cityWeatherFetch.toString();
 
-        //cityWeather.appendChild(getCurrentWeather());
+        // //cityWeather.appendChild(getCurrentWeather());
         
         
         templeContact.appendChild(templeAddress);
@@ -135,23 +131,23 @@ fetch(dataSourceURL)
         templeInfoGrid.appendChild(templeClosures);
         templeInfoGrid.appendChild(templeSummary);
         temple.appendChild(templeInfoGrid);
-        temple.appendChild(cityWeather);
+        //temple.appendChild(cityWeather);
 
         document.querySelector('div.cards').appendChild(temple);
     }
 });
 
-function getCurrentWeather() {
-    let currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
-    fetch(currentWeatherRequestURL)
-        .then((response) => response.json())
-        .then(function(cityWeatherObject) {
-            let currentWeatherFetch = Math.round(cityWeatherObject.main.temp);
-            document.getElementById("weather-fetch").innerHTML = currentWeatherFetch;
-            console.log(currentWeatherFetch);
-        });
-}
-getCurrentWeather();
+// function getCurrentWeather() {
+//     let currentWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=33&lon=-97&APPID=338e750cfb5add709c3539331450f95d&units=imperial';
+//     fetch(currentWeatherRequestURL)
+//         .then((response) => response.json())
+//         .then(function(cityWeatherObject) {
+//             let currentWeatherFetch = Math.round(cityWeatherObject.main.temp);
+//             document.getElementById("weather-fetch").innerHTML = currentWeatherFetch;
+//             console.log(currentWeatherFetch);
+//         });
+// }
+// getCurrentWeather();
 
 
 // // //getting the current weather information
