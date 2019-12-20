@@ -223,6 +223,21 @@ main {
     text-align: left;
 }
 
+//missionary page
+.missionary-images {
+    padding: 10px;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.more-information {
+    ul {
+        list-style: none;
+    }
+}
+
 //reservation page
 .reservation-form input[type=text],
 .reservation-form input[type=email],

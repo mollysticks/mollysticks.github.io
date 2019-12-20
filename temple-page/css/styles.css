@@ -572,6 +572,15 @@ main {
 #menu-flex {
   text-align: left; }
 
+.missionary-images {
+  padding: 10px; }
+  .missionary-images img {
+    width: 150px;
+    height: 150px; }
+
+.more-information ul {
+  list-style: none; }
+
 .reservation-form input[type=text],
 .reservation-form input[type=email],
 .reservation-form input[type=tel],
@@ -736,6 +745,20 @@ footer {
   #menu-flex {
     display: grid;
     grid-template-columns: 1fr 1fr; }
+
+  .missionary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+    .missionary-grid .contact-form {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .missionary-grid .contact-form #information {
+        width: 70%; }
+
+  .more-information {
+    grid-row-start: 2; }
 
   .reservation-form {
     display: flex;
