@@ -470,10 +470,12 @@ nav {
 main {
   text-align: center; }
 
-#reserve-button {
-  padding: 20px;
+.link-button {
+  background-color: #c7dbdb;
+  border: 1px solid #041b2a;
+  width: 20%;
   margin: 30px auto;
-  background-color: #c7dbdb; }
+  padding: 20px; }
 
 #sa-temple-intro {
   width: 70%;

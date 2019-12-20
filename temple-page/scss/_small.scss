@@ -90,10 +90,12 @@ main {
     text-align: center;
 }
 
-#reserve-button {
-    padding: 20px;
+.link-button {
+    background-color: $buttonColor;
+    border: 1px solid $textColor;
+    width: 20%;
     margin: 30px auto;
-    background-color: #c7dbdb;
+    padding: 20px;
 }
 
 #sa-temple-intro {
