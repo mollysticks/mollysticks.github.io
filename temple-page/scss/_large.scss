@@ -132,6 +132,13 @@ nav {
     grid-template-columns: 1fr 1fr;
 }
 
+//reservation page
+.reservation-form input[type=text],
+.reservation-form input[type=email],
+.reservation-form input[type=tel],
+.reservation-form input[type=date], #information {
+    width: 80%;
+}
 //contact info
 .contact {
     width: 80%;

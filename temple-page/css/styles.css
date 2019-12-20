@@ -572,6 +572,18 @@ main {
 #menu-flex {
   text-align: left; }
 
+.reservation-form input[type=text],
+.reservation-form input[type=email],
+.reservation-form input[type=tel],
+.reservation-form input[type=date], #information {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px; }
+
 .contact {
   display: flex;
   justify-content: space-around;
@@ -722,6 +734,12 @@ footer {
   #menu-flex {
     display: grid;
     grid-template-columns: 1fr 1fr; }
+
+  .reservation-form input[type=text],
+  .reservation-form input[type=email],
+  .reservation-form input[type=tel],
+  .reservation-form input[type=date], #information {
+    width: 80%; }
 
   .contact {
     width: 80%; } }
